@@ -140,11 +140,11 @@ void CircularArray<T>::push_front(T data){
 
     if ((*this)[0] > (*this)[1])
     {
-        int zzz = (*this)[0];
+        int temp1 = (*this)[0];
         for (int i = 0; i < size()-1; i++){
             (*this)[i] = (*this)[i+1];
         }
-        (*this)[size()-1] = zzz;
+        (*this)[size()-1] = temp1;
 
     }
 
@@ -245,11 +245,11 @@ void CircularArray<T>::sort(){
         
         if ((*this)[0] > (*this)[1])
         {
-            int zzz = (*this)[0];
+            int temp2 = (*this)[0];
             for (int i = 0; i < size()-1; i++){
                 (*this)[i] = (*this)[i+1];
             }
-            (*this)[size()-1] = zzz;
+            (*this)[size()-1] = temp2;
 
         }
     }
